@@ -1,5 +1,5 @@
 # AbysmDog Project
-![image-20240717143004772](C:\Users\张晶琦\AppData\Roaming\Typora\typora-user-images\image-20240717143004772.png)
+![image-20240717143004772](images\image-20240717143004772.png)
 
 
 

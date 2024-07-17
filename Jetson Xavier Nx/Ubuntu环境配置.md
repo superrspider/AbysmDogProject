@@ -67,7 +67,7 @@ deb https://mirrors.ustc.edu.cn/ubuntu-ports/ focal-security main restricted uni
 
 4. 可能会遇到的问题：
 
-![image-20240607042911199](C:\Users\张晶琦\AppData\Roaming\Typora\typora-user-images\image-20240607042911199.png)
+![image-20240607042911199](images\image-20240607042911199.png)
 
 解决办法：
 sudo mv /var/lib/dpkg/info/ /var/lib/dpkg/info_old/
