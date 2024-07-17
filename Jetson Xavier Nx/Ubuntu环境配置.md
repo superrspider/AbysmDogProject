@@ -137,7 +137,7 @@ sudo update-locale LANG=zh_CN.UTF-8
 
    解决方法：在下面几个选项中打勾，并选择中国的服务器
    
-   ![Alt Text](images/image-20240717163207034.png)
+   ![Alt Text](images/image-20240606152200995.png)
 
 ## 五，安装Vs code
 
