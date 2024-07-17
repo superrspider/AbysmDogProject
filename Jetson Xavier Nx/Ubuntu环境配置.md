@@ -67,7 +67,7 @@ deb https://mirrors.ustc.edu.cn/ubuntu-ports/ focal-security main restricted uni
 
 4. 可能会遇到的问题：
 
-![image-20240607042911199](images\image-20240607042911199.png)
+![Alt Text](images/image-20240607042911199.png)
 
 解决办法：
 sudo mv /var/lib/dpkg/info/ /var/lib/dpkg/info_old/
@@ -101,7 +101,7 @@ sudo mv /var/lib/dpkg/info_old/ /var/lib/dpkg/info/
      ./dkms-install.sh             #安装！
      显示如下内容则代表安装成功，拔插网卡查看是否正常工作。
 
-![image-20240605121525182](C:\Users\张晶琦\AppData\Roaming\Typora\typora-user-images\image-20240605121525182.png)
+![Alt Text](images/image-20240605121525182.png)
 
 4. 可能会遇到的问题：
 
@@ -111,7 +111,7 @@ sudo mv /var/lib/dpkg/info_old/ /var/lib/dpkg/info/
 
    解决方法：```chmod 777 ./*.sh```
 
-![image-20240607044358401](C:\Users\张晶琦\AppData\Roaming\Typora\typora-user-images\image-20240607044358401.png)
+![Alt Text](images/image-20240607044358401.png)
 
 ## 四，更改为中文（可跳过）
 
@@ -136,8 +136,8 @@ sudo update-locale LANG=zh_CN.UTF-8
    原因：下载源的设置不对
 
    解决方法：在下面几个选项中打勾，并选择中国的服务器
-
-   ![image-20240717163207034](C:\Users\张晶琦\AppData\Roaming\Typora\typora-user-images\image-20240717163207034.png)
+   
+   ![Alt Text](images/image-20240717163207034.png)
 
 ## 五，安装Vs code
 
@@ -145,7 +145,7 @@ sudo update-locale LANG=zh_CN.UTF-8
 
    原因：Jetpack的系统与新版本VSCode不兼容
 
-![image-20240606154718708](C:\Users\张晶琦\AppData\Roaming\Typora\typora-user-images\image-20240606154718708.png)
+![Alt Text](images/image-20240606154718708.png)
 
 解决方法：
 
