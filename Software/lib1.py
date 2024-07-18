@@ -1,17 +1,5 @@
 # -*- coding=utf-8 -*-
 
-"""
-大然机器人-小米CyberGear微电机python控制库
-
-适用平台：windows或linux平台
-库版本号：v1.0
-测试主控版本：windows 10 python 3.7
-测试人员：唐昭
-测试时间：2023.08.31
-
-备注：该库函数目前仅适用于大然科技的USB转CAN模块
-淘宝链接： https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-22325405943.12.31aac3b4jKqqpc&id=705379289168
-"""
 import time
 import serial
 import math as cm
@@ -58,7 +46,7 @@ motor_state = numpy.zeros((MOTOR_NUM, 6))
 MCU_ID = []  # 电机主控MCU芯片序列号
 
 """
-内部辅助函数，用户无需使用
+内部辅助函数
 """
 
 
@@ -100,17 +88,6 @@ def read_data():
         print("Received data error in read_data(): " + str(byte_list))
         READ_FLAG = -1
         return
-
-
-# USB转CAN模块包模式：CAN报文->串行帧
-# def can_to_uart(data=[], rtr=0):
-#     udata = [0xAA, 1, 0, 0x08, 0, 0, 0, 0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00]
-#     if len(data) == 13 and data[0] == 0x08:
-#         for i in range(12):
-#             udata[4 + i] = data[i + 1]
-#         return udata
-#     else:
-#         return []
 
 def can_to_uart(data=[], rtr=0):
     udata = [0x41, 0x54, 0x0, 0x0, 0x0, 0x0, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x0d, 0x0a]
